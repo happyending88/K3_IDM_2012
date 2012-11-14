@@ -1,9 +1,15 @@
+int x=0;
 void setup() {
   println("Lu Jin");
   size(400, 400);  
 }
 void draw() {
   background(0);
+  x++;
+  if(x>width){
+    x=-150;
+  }
+  translate(x,0);
   rect(50,50,100,200);
   arc(50,250,200,100,0,HALF_PI);
   translate(150,0);
